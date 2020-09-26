@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_list_data"
+    app:cardCornerRadius="6dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    app:cardElevation="0px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_person"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_circle"
+            android:contentDescription="@string/todo"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/nama"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_umur"
+            app:layout_constraintEnd_toStartOf="@+id/cv_giftcard"
+            app:layout_constraintStart_toEndOf="@+id/img_person"
+            app:layout_constraintTop_toTopOf="@id/img_person" />
+
+        <TextView
+            android:id="@+id/tv_umur"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/nrp"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_jabatan"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_giftcard"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0px"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_pangkat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cv_pangkat">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/todo"
+                android:padding="4dp"
+                android:src="@drawable/giftcard" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_jabatan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/jabatan"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/cv_giftcard"
+            app:layout_constraintStart_toStartOf="@id/tv_umur"
+            app:layout_constraintTop_toBottomOf="@id/tv_umur" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_pangkat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0px"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/img_person"
+            app:layout_constraintTop_toBottomOf="@+id/tv_jabatan">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/img_pangkat"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_pangkat"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_pangkat"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_pangkat"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/tv_pangkat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/pangkat"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_pangkat"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlSymmetry" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

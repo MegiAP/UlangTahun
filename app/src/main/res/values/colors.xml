@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#33BAF6</color>
+    <color name="colorPrimary">#33BAF6</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="tabIndicatorColor">#FFFFFF</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorBlue">#C886D1F3</color>
+    <color name="colorAccent">#33BAF6</color>
+    <color name="colorAccent_1">#4FC3F7</color>
+    <color name="colorGray">#F8F8F8</color>
+    <color name="colorGray2">#F3F1F1</color>
+    <color name="colorDarkGray">#E1E1E1</color>
+    <color name="colorDarkBlue">#00A2E9</color>
+    <color name="textGray">#757575</color>
+    <color name="colorRed">#EF5350</color>
+    <color name="colorYellow">#F6C942</color>
+    <color name="colorGreen">#57EA72</color>
+    <color name="colorDarkGray2">#8C8C8C</color>
+</resources>

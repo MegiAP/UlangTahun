@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <Button
+            android:id="@+id/btn_pamen"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/pamen"
+            android:layout_marginTop="210dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_pama"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_pama"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/pama"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toTopOf="@id/btn_bintara"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_pamen" />
+
+        <Button
+            android:id="@+id/btn_bintara"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/bintara"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toTopOf="@id/btn_pns"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_pama" />
+
+        <Button
+            android:id="@+id/btn_pns"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/pns"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="210dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_bintara" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

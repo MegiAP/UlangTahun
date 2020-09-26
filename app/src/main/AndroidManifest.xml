@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ulangtahun">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/polda_lampung"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/polda_lampung"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup"
+        tools:targetApi="n">
+        <activity android:name=".ui.SubMenuActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.MenuActivity"
+            tools:ignore="InnerclassSeparator"/>
+        <activity android:name=".ui.MenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.Template"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.UcapanActivity"
+            android:parentActivityName=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" />
+
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver" />
+
+        <service android:name=".service.MyService" />
+    </application>
+
+</manifest>

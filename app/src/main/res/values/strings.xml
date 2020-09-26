@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Polda Lampung</string>
+    <string name="todo">TODO</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="sandi">Sandi</string>
+    <string name="nama">Nama</string>
+    <string name="umur">Umur</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_kosong">Tidak Ada Yang Berulang Tahun</string>
+    <string name="ucapan_selamat">Ucapan Selamat</string>
+    <string name="dari">Dari</string>
+    <string name="kirim_whatsapp">Kirim WhatsApp</string>
+    <string name="kirim_sms">Kirim SMS</string>
+    <string name="login">Login</string>
+    <string name="template">Template</string>
+    <string name="logout">Logout</string>
+    <string name="template_kartu_ucapan">Template Kartu Ucapan</string>
+    <string name="simpan">Simpan</string>
+    <string name="jabatan">Jabatan</string>
+    <string name="pangkat">Pangkat</string>
+    <string name="email_pengguna">Email Pengguna</string>
+    <string name="nrp">NRP</string>
+    <string name="template1">Barakallahu Fii Umrik</string>
+    <string name="template2">Selamat Ulang Tahun</string>
+    <string name="template3">Selamat Ulang Tahun Semoga Umur Anda Berkah</string>
+    <string name="template4">Happy Birthday</string>
+    <string name="new_line">\n\n</string>
+    <string name="pamen">Pamen Polda Lampung</string>
+    <string name="pama">Pama Polda Lampung</string>
+    <string name="bintara">Bintara Polda Lampung</string>
+    <string name="pns">PNS Polda Lampung</string>
+    <string name="hari_ini">Hari Ini</string>
+    <string name="kemarin">Kemarin</string>
+    <string name="besok">Besok</string>
+    <string name="birthday_application">Birthday Application</string>
+</resources>
